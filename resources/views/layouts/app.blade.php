@@ -9,7 +9,7 @@
     <body>
         <header>
             <div id="header-logo">
-                <img src="{{ asset('images/logo-la-molisana.png') }}" alt="logo-la-molisana">
+                <img src="{{ asset('images/logo-la-molisana.png') }}" alt="Logo La Molisana">
             </div>
 
             <nav>
@@ -38,7 +38,9 @@
         </main>
 
         <footer>
-            <span>Footer</span>
+            <div id="footer-bottom">
+                <img src="{{ asset('images/footer-montagne-bottom.jpg') }}" alt="Montagne">
+            </div>
         </footer>
     </body>
 </html>

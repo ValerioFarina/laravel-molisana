@@ -37,3 +37,7 @@ header li a:hover {
   background-color: #b3e5fc;
 }
 
+footer #footer-bottom img {
+  max-width: 100%;
+}
+
