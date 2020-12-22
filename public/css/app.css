@@ -56,6 +56,20 @@ header li a:hover {
   background-color: #b3e5fc;
 }
 
+main #pasta-types {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 25px;
+}
+
+main #pasta-types .pasta-type {
+  width: calc(100% / 3);
+}
+
+main #pasta-types .pasta-type img {
+  max-width: 100%;
+}
+
 #footer-top #footer-contacts {
   width: calc(100% / 3);
 }

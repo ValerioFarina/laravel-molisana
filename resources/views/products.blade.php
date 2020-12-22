@@ -3,8 +3,13 @@
 @section('page-title', 'Prodotti')
 
 @section('content')
-    <h1>Prodotti</h1>
-    @php
-        dd($pasta_types);
-    @endphp
+    <div class="container">
+        <div id="pasta-types">
+            @foreach ($pasta_types as $pasta_type)
+                <div class="pasta-type">
+                    <img src="{{ $pasta_type["src"] }}" alt="{{ $pasta_type["titolo"] }}">
+                </div>
+            @endforeach
+        </div>
+    </div>
 @endsection

@@ -1,0 +1,15 @@
+main {
+    #pasta-types {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 25px;
+
+        .pasta-type {
+            width: calc(100% / 3);
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
