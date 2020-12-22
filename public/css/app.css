@@ -66,13 +66,34 @@ main #pasta-types-container .cards-container {
 }
 
 main #pasta-types-container .cards-container .card {
+  position: relative;
   width: calc((100% / 3) - 10px);
   margin: 5px;
+}
+
+main #pasta-types-container .cards-container .card:hover .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main #pasta-types-container .cards-container .card img {
   display: block;
   max-width: 100%;
+}
+
+main #pasta-types-container .cards-container .card .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+main #pasta-types-container .cards-container .card .overlay a {
+  padding: 20px;
 }
 
 #footer-top #footer-contacts {

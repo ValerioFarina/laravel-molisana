@@ -10,13 +10,13 @@
                     <h1>
                         @switch ($pasta_size)
                             @case ('lunga')
-                                {{ 'le lunghe' }}
+                                le lunghe
                                 @break
                             @case ('corta')
-                                {{ 'le corte' }}
+                                le corte
                                 @break
                             @case ('cortissima')
-                                {{ 'le cortissime' }}
+                                le cortissime
                                 @break
                         @endswitch
                     </h1>
@@ -25,6 +25,11 @@
                             @if ($pasta_type["tipo"] == $pasta_size)
                                 <div class="card">
                                     <img src="{{ $pasta_type["src"] }}" alt="{{ $pasta_type["titolo"] }}">
+                                    <div class="overlay">
+                                        <a href="#">
+                                            {{ $pasta_type["titolo"] }}
+                                        </a>
+                                    </div>
                                 </div>
                             @endif
                         @endforeach
