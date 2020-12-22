@@ -56,6 +56,10 @@ header li a:hover {
   background-color: #b3e5fc;
 }
 
+main {
+  min-height: 500px;
+}
+
 #pasta-types-container {
   background-image: url("/images/fondo-pag-speciali.jpg");
   background-position: center;
@@ -110,6 +114,8 @@ header li a:hover {
 }
 
 #footer-top #footer-menus {
+  display: flex;
+  flex-wrap: wrap;
   width: calc(100% * 2 / 3);
 }
 

@@ -4,6 +4,8 @@
     }
 
     #footer-menus {
+        display: flex;
+        flex-wrap: wrap;
         width: calc(100% * 2 / 3);
 
         .footer-menu {

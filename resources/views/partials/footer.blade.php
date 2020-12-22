@@ -15,63 +15,24 @@
                 </ul>
             </div>
 
-            <div id="footer-menus" class="float-left clearfix">
-                <div class="footer-menu float-left">
-                    <h3>
-                        pastificio
-                    </h3>
+            <div id="footer-menus" class="float-left">
+                @foreach ($footer['menus'] as $title => $menu)
+                    <div class="footer-menu">
+                        <h3>
+                            {{ $title }}
+                        </h3>
 
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Il Pastificio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Grano decorticato a pietra
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-menu float-left">
-                    <h3>
-                        pastificio
-                    </h3>
-
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Il Pastificio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Grano decorticato a pietra
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-menu float-left">
-                    <h3>
-                        pastificio
-                    </h3>
-
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Il Pastificio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Grano decorticato a pietra
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                        <ul>
+                            @foreach ($menu as $item)
+                                <li>
+                                    <a href="#">
+                                        {{ $item }}
+                                    </a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
