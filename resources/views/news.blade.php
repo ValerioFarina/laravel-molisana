@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('page-title', 'Prodotti')
+@section('page-title', 'News')
 
 @section('content')
-    <h1>Prodotti</h1>
+    <h1>News</h1>
 @endsection

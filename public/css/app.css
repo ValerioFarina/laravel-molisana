@@ -1,4 +1,39 @@
-h1 {
-  color: red;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+}
+
+header #header-logo {
+  padding: 50px 0;
+}
+
+header li {
+  display: inline-block;
+}
+
+header li a {
+  display: inline-block;
+  padding: 20px 10px;
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+}
+
+header li a:hover {
+  background-color: #b3e5fc;
 }
 

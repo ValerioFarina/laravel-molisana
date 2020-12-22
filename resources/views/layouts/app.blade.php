@@ -3,11 +3,34 @@
     <head>
         <meta charset="utf-8">
         <title>La Molisana - @yield('page-title')</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
     <body>
         <header>
-            <img src="{{ asset('images/logo-la-molisana.png') }}" alt="logo-la-molisana">
+            <div id="header-logo">
+                <img src="{{ asset('images/logo-la-molisana.png') }}" alt="logo-la-molisana">
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="{{ url('/') }}">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('products') }}">
+                            Prodotti
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('news') }}">
+                            News
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <main>
