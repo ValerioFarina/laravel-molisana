@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>@yield('page-title') - La Molisana</title>
+        <title>La Molisana - @yield('page-title')</title>
     </head>
     <body>
         <header>
