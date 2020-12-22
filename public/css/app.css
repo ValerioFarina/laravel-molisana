@@ -56,33 +56,41 @@ header li a:hover {
   background-color: #b3e5fc;
 }
 
-main #pasta-types-container {
-  padding: 0 25px;
+#pasta-types-container {
+  background-image: url(/images/fondo-pag-speciali.jpg?2f95c43d2f5c6ce37bf1838709b316a3);
+  background-position: center;
+  padding: 70px 0;
 }
 
-main #pasta-types-container .cards-container {
+#pasta-types-container h1 {
+  margin: 20px 0;
+  text-transform: uppercase;
+  color: #002d72;
+}
+
+#pasta-types-container .cards-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-main #pasta-types-container .cards-container .card {
+#pasta-types-container .cards-container .card {
   position: relative;
   width: calc((100% / 3) - 10px);
   margin: 5px;
 }
 
-main #pasta-types-container .cards-container .card:hover .overlay {
+#pasta-types-container .cards-container .card:hover .overlay {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main #pasta-types-container .cards-container .card img {
+#pasta-types-container .cards-container .card img {
   display: block;
   max-width: 100%;
 }
 
-main #pasta-types-container .cards-container .card .overlay {
+#pasta-types-container .cards-container .card .overlay {
   display: none;
   position: absolute;
   top: 0;
@@ -92,7 +100,7 @@ main #pasta-types-container .cards-container .card .overlay {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-main #pasta-types-container .cards-container .card .overlay a {
+#pasta-types-container .cards-container .card .overlay a {
   padding: 20px;
 }
 

@@ -3,8 +3,8 @@
 @section('page-title', 'Prodotti')
 
 @section('content')
-    <div class="container">
-        <div id="pasta-types-container">
+    <div id="pasta-types-container">
+        <div class="container">
             @foreach ($pasta_sizes as $pasta_size)
                 <div class="pasta-size">
                     <h1>
