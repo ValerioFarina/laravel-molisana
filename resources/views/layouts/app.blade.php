@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>La Molisana - @yield('page-title')</title>
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
     <body>
         <header>
