@@ -66,10 +66,12 @@ main #pasta-types-container .cards-container {
 }
 
 main #pasta-types-container .cards-container .card {
-  width: calc(100% / 3);
+  width: calc((100% / 3) - 10px);
+  margin: 5px;
 }
 
 main #pasta-types-container .cards-container .card img {
+  display: block;
   max-width: 100%;
 }
 
