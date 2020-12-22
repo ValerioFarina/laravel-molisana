@@ -13,6 +13,25 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.float-left {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 header {
   text-align: center;
 }
@@ -37,7 +56,19 @@ header li a:hover {
   background-color: #b3e5fc;
 }
 
-footer #footer-bottom img {
+#footer-top #footer-contacts {
+  width: calc(100% / 3);
+}
+
+#footer-top #footer-menus {
+  width: calc(100% * 2 / 3);
+}
+
+#footer-top #footer-menus .footer-menu {
+  width: 50%;
+}
+
+#footer-bottom img {
   max-width: 100%;
 }
 
