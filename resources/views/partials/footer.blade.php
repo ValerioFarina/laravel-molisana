@@ -7,12 +7,11 @@
                 </div>
 
                 <ul>
-                    <li>
-                        Ragione sociale
-                    </li>
-                    <li>
-                        Sede legale
-                    </li>
+                    @foreach ($footer['contacts'] as $contact)
+                        <li>
+                            {{ $contact }}
+                        </li>
+                    @endforeach
                 </ul>
             </div>
 

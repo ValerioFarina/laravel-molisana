@@ -57,7 +57,7 @@ header li a:hover {
 }
 
 #pasta-types-container {
-  background-image: url(/images/fondo-pag-speciali.jpg?2f95c43d2f5c6ce37bf1838709b316a3);
+  background-image: url("/images/fondo-pag-speciali.jpg");
   background-position: center;
   padding: 70px 0;
 }
@@ -102,6 +102,7 @@ header li a:hover {
 
 #pasta-types-container .cards-container .card .overlay a {
   padding: 20px;
+  font-size: 20px;
 }
 
 #footer-top #footer-contacts {

@@ -1,5 +1,5 @@
 #pasta-types-container {
-    background-image: url('../../../public/assets/images/fondo-pag-speciali.jpg');
+    background-image: url('/images/fondo-pag-speciali.jpg');
     background-position: center;
     padding: 70px 0;
 
@@ -38,6 +38,7 @@
 
                 a {
                     padding: 20px;
+                    font-size: 20px;
                 }
             }
         }

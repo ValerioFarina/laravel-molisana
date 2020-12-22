@@ -18,6 +18,8 @@
                             @case ('cortissima')
                                 le cortissime
                                 @break
+                            @default
+                                formato non definito
                         @endswitch
                     </h1>
                     <div class="cards-container">
