@@ -56,17 +56,20 @@ header li a:hover {
   background-color: #b3e5fc;
 }
 
-main #pasta-types {
-  display: flex;
-  flex-wrap: wrap;
+main #pasta-types-container {
   padding: 0 25px;
 }
 
-main #pasta-types .pasta-type {
+main #pasta-types-container .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main #pasta-types-container .cards-container .card {
   width: calc(100% / 3);
 }
 
-main #pasta-types .pasta-type img {
+main #pasta-types-container .cards-container .card img {
   max-width: 100%;
 }
 

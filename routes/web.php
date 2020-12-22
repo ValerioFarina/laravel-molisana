@@ -141,8 +141,17 @@ Route::get('/prodotti', function () {
         ]
     ];
 
+    $pasta_sizes = [];
+
+    foreach ($pasta_types as $pasta_type) {
+        if (!in_array($pasta_type["tipo"], $pasta_sizes)) {
+            $pasta_sizes[] = $pasta_type["tipo"];
+        }
+    }
+
     $data = [
-        'pasta_types' => $pasta_types
+        'pasta_types' => $pasta_types,
+        'pasta_sizes' => $pasta_sizes
     ];
 
     return view('products', $data);

@@ -1,14 +1,17 @@
 main {
-    #pasta-types {
-        display: flex;
-        flex-wrap: wrap;
+    #pasta-types-container {
         padding: 0 25px;
 
-        .pasta-type {
-            width: calc(100% / 3);
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
 
-            img {
-                max-width: 100%;
+            .card {
+                width: calc(100% / 3);
+
+                img {
+                    max-width: 100%;
+                }
             }
         }
     }
