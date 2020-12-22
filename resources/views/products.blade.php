@@ -7,9 +7,19 @@
         <div id="pasta-types-container">
             @foreach ($pasta_sizes as $pasta_size)
                 <div class="pasta-size">
-                    <h2>
-                        {{ $pasta_size }}
-                    </h2>
+                    <h1>
+                        @switch ($pasta_size)
+                            @case ('lunga')
+                                {{ 'le lunghe' }}
+                                @break
+                            @case ('corta')
+                                {{ 'le corte' }}
+                                @break
+                            @case ('cortissima')
+                                {{ 'le cortissime' }}
+                                @break
+                        @endswitch
+                    </h1>
                     <div class="cards-container">
                         @foreach ($pasta_types as $pasta_type)
                             @if ($pasta_type["tipo"] == $pasta_size)
