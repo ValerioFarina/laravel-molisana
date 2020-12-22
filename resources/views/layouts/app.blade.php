@@ -6,7 +6,7 @@
     </head>
     <body>
         <header>
-            <span>Header</span>
+            <img src="{{ asset('images/logo-la-molisana.png') }}" alt="logo-la-molisana">
         </header>
 
         <main>
