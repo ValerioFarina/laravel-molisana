@@ -1,5 +1,14 @@
 main {
     min-height: 500px;
+
+    h1 {
+        text-transform: uppercase;
+    }
+}
+
+#pasta-types-container,
+.product-info {
+    color: $brand_secondary;
 }
 
 #pasta-types-container {
@@ -8,9 +17,7 @@ main {
     padding: 70px 0;
 
     h1 {
-        margin: 20px 0;
-        text-transform: uppercase;
-        color: 	rgb(0, 45, 114);
+        padding: 20px 0;
     }
 
     .cards-container {
@@ -48,9 +55,20 @@ main {
     }
 }
 
-.product-images {
+.product-info {
+    padding: 80px 0 50px 0;
+    background-color: $brand_primary;
+
+    h1 {
+        text-align: center;
+    }
+
     img {
         display: block;
         max-width: 100%;
+    }
+
+    p {
+        font-size: 22px;
     }
 }

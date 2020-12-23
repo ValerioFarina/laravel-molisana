@@ -60,6 +60,15 @@ main {
   min-height: 500px;
 }
 
+main h1 {
+  text-transform: uppercase;
+}
+
+#pasta-types-container,
+.product-info {
+  color: #002d72;
+}
+
 #pasta-types-container {
   background-image: url("/images/fondo-pag-speciali.jpg");
   background-position: center;
@@ -67,9 +76,7 @@ main {
 }
 
 #pasta-types-container h1 {
-  margin: 20px 0;
-  text-transform: uppercase;
-  color: #002d72;
+  padding: 20px 0;
 }
 
 #pasta-types-container .cards-container {
@@ -108,9 +115,22 @@ main {
   font-size: 20px;
 }
 
-.product-images img {
+.product-info {
+  padding: 80px 0 50px 0;
+  background-color: #b7dae5;
+}
+
+.product-info h1 {
+  text-align: center;
+}
+
+.product-info img {
   display: block;
   max-width: 100%;
+}
+
+.product-info p {
+  font-size: 22px;
 }
 
 #footer-top #footer-contacts {
