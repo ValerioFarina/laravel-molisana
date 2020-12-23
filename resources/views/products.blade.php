@@ -11,11 +11,11 @@
                         {{ $pasta_type['title'] }}
                     </h1>
                     <div class="cards-container">
-                        @foreach ($pasta_type['items'] as $item)
+                        @foreach ($pasta_type['items'] as $index => $item)
                             <div class="card">
                                 <img src="{{ $item["src"] }}" alt="{{ $item["titolo"] }}">
                                 <div class="overlay">
-                                    <a href="#">
+                                    <a href="{{ route('product-details', ['id' => $index]) }}">
                                         {{ $item["titolo"] }}
                                     </a>
                                 </div>

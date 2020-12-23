@@ -3,5 +3,7 @@
 @section('page-title', 'Dettagli prodotto')
 
 @section('content')
-    {{ dd($product) }}
+    <h1>
+        {{ $product["titolo"] }}
+    </h1>
 @endsection
