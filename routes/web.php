@@ -58,6 +58,17 @@ Route::get('/prodotti', function () {
     return view('products', $data);
 })->name('products');
 
+Route::get('/dettagli-prodotto/{id}', function ($id) {
+    $pasta = config('pasta');
+
+    $product = $pasta[$id];
+
+    $data = [
+        'product' => $product
+    ];
+    return view('product-details', $data);
+})->name('product-details');
+
 Route::get('/news', function () {
     return view('news');
 })->name('news');
