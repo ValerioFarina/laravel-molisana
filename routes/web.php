@@ -61,12 +61,17 @@ Route::get('/prodotti', function () {
 Route::get('/prodotti/dettagli-prodotto/{id}', function ($id) {
     $pasta = config('pasta');
 
-    $product = $pasta[$id];
+    if (array_key_exists($id, $pasta)) {
+        $product = $pasta[$id];
 
-    $data = [
-        'product' => $product
-    ];
-    return view('product-details', $data);
+        $data = [
+            'product' => $product
+        ];
+        
+        return view('product-details', $data);
+    } else {
+        abort('404');
+    }
 })->name('product-details');
 
 Route::get('/news', function () {
