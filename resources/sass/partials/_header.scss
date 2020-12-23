@@ -15,7 +15,8 @@ header {
             font-weight: 700;
             color: black;
 
-            &:hover {
+            &:hover,
+            &.active {
                 background-color: rgb(179, 229, 252);
             }
         }

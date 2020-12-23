@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('/prodotti', function () {
     $pasta = collect(config('pasta'));
@@ -67,7 +67,7 @@ Route::get('/prodotti/dettagli-prodotto/{id}', function ($id) {
         $data = [
             'product' => $product
         ];
-        
+
         return view('product-details', $data);
     } else {
         abort('404');

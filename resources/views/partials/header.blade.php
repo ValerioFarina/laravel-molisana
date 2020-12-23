@@ -6,17 +6,17 @@
     <nav>
         <ul>
             <li>
-                <a href="{{ url('/') }}">
+                <a href="{{ url('/') }}" class="{{ is_current_page('home') ? 'active' : '' }}">
                     Home
                 </a>
             </li>
             <li>
-                <a href="{{ route('products') }}">
+                <a href="{{ route('products') }}" class="{{ is_current_page('products')||is_current_page('product-details') ? 'active' : '' }}">
                     Prodotti
                 </a>
             </li>
             <li>
-                <a href="{{ route('news') }}">
+                <a href="{{ route('news') }}" class="{{ is_current_page('news') ? 'active' : '' }}">
                     News
                 </a>
             </li>

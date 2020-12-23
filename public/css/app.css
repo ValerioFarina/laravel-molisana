@@ -52,7 +52,8 @@ header li a {
   color: black;
 }
 
-header li a:hover {
+header li a:hover,
+header li a.active {
   background-color: #b3e5fc;
 }
 
