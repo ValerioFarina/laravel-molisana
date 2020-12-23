@@ -3,7 +3,8 @@
 @section('page-title', 'Dettagli prodotto')
 
 @section('content')
-    <h1>
-        {{ $product["titolo"] }}
-    </h1>
+    <div class="product-images">
+        <img src="{{ $product["src-h"] }}" alt="{{ $product["titolo"] }}">
+        <img src="{{ $product["src-p"] }}" alt="pacchetto pasta">
+    </div>
 @endsection

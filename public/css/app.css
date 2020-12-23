@@ -90,7 +90,6 @@ main {
 }
 
 #pasta-types-container .cards-container .card img {
-  display: block;
   max-width: 100%;
 }
 
@@ -107,6 +106,11 @@ main {
 #pasta-types-container .cards-container .card .overlay a {
   padding: 20px;
   font-size: 20px;
+}
+
+.product-images img {
+  display: block;
+  max-width: 100%;
 }
 
 #footer-top #footer-contacts {
