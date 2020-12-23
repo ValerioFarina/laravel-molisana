@@ -3,38 +3,23 @@
 @section('page-title', 'Prodotti')
 
 @section('content')
-    {{ dd($pasta_types) }}
     <div id="pasta-types-container">
         <div class="container">
-            @foreach ($pasta_sizes as $pasta_size)
+            @foreach ($pasta_types as $pasta_type)
                 <div class="pasta-size">
                     <h1>
-                        @switch ($pasta_size)
-                            @case ('lunga')
-                                le lunghe
-                                @break
-                            @case ('corta')
-                                le corte
-                                @break
-                            @case ('cortissima')
-                                le cortissime
-                                @break
-                            @default
-                                formato non definito
-                        @endswitch
+                        {{ $pasta_type['title'] }}
                     </h1>
                     <div class="cards-container">
-                        @foreach ($pasta_types as $pasta_type)
-                            @if ($pasta_type["tipo"] == $pasta_size)
-                                <div class="card">
-                                    <img src="{{ $pasta_type["src"] }}" alt="{{ $pasta_type["titolo"] }}">
-                                    <div class="overlay">
-                                        <a href="#">
-                                            {{ $pasta_type["titolo"] }}
-                                        </a>
-                                    </div>
+                        @foreach ($pasta_type['items'] as $item)
+                            <div class="card">
+                                <img src="{{ $item["src"] }}" alt="{{ $item["titolo"] }}">
+                                <div class="overlay">
+                                    <a href="#">
+                                        {{ $item["titolo"] }}
+                                    </a>
                                 </div>
-                            @endif
+                            </div>
                         @endforeach
                     </div>
                 </div>

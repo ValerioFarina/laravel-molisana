@@ -18,15 +18,41 @@ Route::get('/', function () {
 });
 
 Route::get('/prodotti', function () {
-    $pasta_types = config('pasta');
+    $pasta = collect(config('pasta'));
 
-    $pasta_sizes = Arr::pluck($pasta_types, 'tipo');
+    $pasta_sizes = Arr::pluck($pasta, 'tipo');
 
     $pasta_sizes = array_unique($pasta_sizes);
 
+    $pasta_types = [];
+
+    foreach ($pasta_sizes as $size) {
+        switch ($size) {
+            case 'lunga':
+                $title = 'le lunghe';
+                break;
+
+            case 'corta':
+                $title = 'le corte';
+                break;
+
+            case 'cortissima':
+                $title = 'le cortissime';
+                break;
+
+            default:
+                $title = 'formato non definito';
+                break;
+        }
+
+        $pasta_types[] = [
+            'title' => $title,
+            'items' => $pasta->where('tipo', $size)
+        ];
+    }
+
     $data = [
-        'pasta_types' => $pasta_types,
-        'pasta_sizes' => $pasta_sizes
+        'pasta_types' => $pasta_types
     ];
 
     return view('products', $data);
