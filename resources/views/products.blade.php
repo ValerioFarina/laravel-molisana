@@ -3,6 +3,7 @@
 @section('page-title', 'Prodotti')
 
 @section('content')
+    {{ dd($pasta_types) }}
     <div id="pasta-types-container">
         <div class="container">
             @foreach ($pasta_sizes as $pasta_size)

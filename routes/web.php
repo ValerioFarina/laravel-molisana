@@ -20,13 +20,9 @@ Route::get('/', function () {
 Route::get('/prodotti', function () {
     $pasta_types = config('pasta');
 
-    $pasta_sizes = [];
+    $pasta_sizes = Arr::pluck($pasta_types, 'tipo');
 
-    foreach ($pasta_types as $pasta_type) {
-        if (!in_array($pasta_type["tipo"], $pasta_sizes)) {
-            $pasta_sizes[] = $pasta_type["tipo"];
-        }
-    }
+    $pasta_sizes = array_unique($pasta_sizes);
 
     $data = [
         'pasta_types' => $pasta_types,
