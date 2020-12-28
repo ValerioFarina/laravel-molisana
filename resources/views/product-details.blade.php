@@ -3,12 +3,13 @@
 @section('page-title', 'Dettagli prodotto')
 
 @section('content')
-    <a href="{{ array_key_exists($product_id - 1, $pasta_types) ? route('product-details', ['id' => $product_id - 1]) : route('product-details', ['id' => count($pasta_types) - 1]) }}" class="arrow left">
+    <a href="{{ prev_product($pasta_types, $product_id) }}" class="arrow left">
         <i class="fas fa-long-arrow-alt-left"></i>
     </a>
-    <a href="{{ array_key_exists($product_id + 1, $pasta_types) ? route('product-details', ['id' => $product_id + 1]) : route('product-details', ['id' => 0]) }}" class="arrow right">
+    <a href="{{ next_product($pasta_types, $product_id) }}" class="arrow right">
         <i class="fas fa-long-arrow-alt-right"></i>
     </a>
+    
     <div class="product-info">
         <div class="container">
             <h1>
