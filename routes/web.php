@@ -65,8 +65,9 @@ Route::get('/prodotti/dettagli-prodotto/{id}', function ($id) {
         $product = $pasta[$id];
 
         $data = [
+            'pasta_types' => $pasta,
             'product' => $product,
-            'id' => $id
+            'product_id' => $id
         ];
 
         return view('product-details', $data);
