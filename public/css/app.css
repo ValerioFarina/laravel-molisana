@@ -22,6 +22,10 @@ ul {
   margin: 0 auto;
 }
 
+.container-flex {
+  display: flex;
+}
+
 .float-left {
   float: left;
 }
@@ -114,6 +118,23 @@ main h1 {
 #pasta-types-container .cards-container .card .overlay a {
   padding: 20px;
   font-size: 20px;
+}
+
+.arrow {
+  display: block;
+  position: fixed;
+  top: 230px;
+  padding: 60px 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
 }
 
 .product-info {

@@ -3,6 +3,12 @@
 @section('page-title', 'Dettagli prodotto')
 
 @section('content')
+    <a href="#" class="arrow left">
+        <i class="fas fa-long-arrow-alt-left"></i>
+    </a>
+    <a href="#" class="arrow right">
+        <i class="fas fa-long-arrow-alt-right"></i>
+    </a>
     <div class="product-info">
         <div class="container">
             <h1>

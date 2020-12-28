@@ -55,6 +55,23 @@ main {
     }
 }
 
+.arrow {
+    display: block;
+    position: fixed;
+    top: 230px;
+    padding: 60px 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}
+
 .product-info {
     padding: 80px 0 50px 0;
     background-color: $brand_primary;
