@@ -55,20 +55,48 @@ main {
     }
 }
 
-.arrow {
-    display: block;
+.prev-product,
+.next-product {
+    display: flex;
+    flex-wrap: wrap;
     position: fixed;
     top: 230px;
-    padding: 60px 30px;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
+
+    &:hover .arrow {
+        width: 120px;
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    &:hover .product-image {
+        display: block;
+    }
+
+    .arrow {
+        width: 60px;
+        height: 120px;
+        text-align: center;
+        line-height: 120px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+    }
+
+    .product-image {
+        display: none;
+        width: 120px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
-.arrow.left {
+.prev-product {
     left: 0;
 }
 
-.arrow.right {
+.next-product {
     right: 0;
 }
 
