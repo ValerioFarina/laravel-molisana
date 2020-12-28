@@ -4,19 +4,35 @@
 
 @section('content')
     <a href="{{ prev_product_route($pasta_types, $product_id) }}" class="prev-product">
-        <div class="product-image">
-            <img src="{{ prev_product_img($pasta_types, $product_id) }}" alt="">
+        <div class="top">
+            <div class="product-image">
+                <img src="{{ prev_product($pasta_types, $product_id)["src"] }}" alt="">
+            </div>
+            <div class="arrow">
+                <i class="fas fa-long-arrow-alt-left"></i>
+            </div>
         </div>
-        <div class="arrow">
-            <i class="fas fa-long-arrow-alt-left"></i>
+
+        <div class="bottom">
+            <h4>
+                {{ prev_product($pasta_types, $product_id)["titolo"] }}
+            </h4>
         </div>
     </a>
     <a href="{{ next_product_route($pasta_types, $product_id) }}" class="next-product">
-        <div class="arrow">
-            <i class="fas fa-long-arrow-alt-right"></i>
+        <div class="top">
+            <div class="arrow">
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+            <div class="product-image">
+                <img src="{{ next_product($pasta_types, $product_id)["src"] }}" alt="">
+            </div>
         </div>
-        <div class="product-image">
-            <img src="{{ next_product_img($pasta_types, $product_id) }}" alt="">
+
+        <div class="bottom">
+            <h4>
+                {{ next_product($pasta_types, $product_id)["titolo"] }}
+            </h4>
         </div>
     </a>
 
