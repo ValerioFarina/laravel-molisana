@@ -6,7 +6,7 @@
     <a href="{{ prev_product_route($pasta_types, $product_id) }}" class="prev-product">
         <div class="top">
             <div class="product-image">
-                <img src="{{ prev_product($pasta_types, $product_id)["src"] }}" alt="">
+                <img src="{{ prev_product($pasta_types, $product_id)["src"] }}" alt="{{ prev_product($pasta_types, $product_id)["titolo"] }}">
             </div>
             <div class="arrow">
                 <i class="fas fa-long-arrow-alt-left"></i>
@@ -25,7 +25,7 @@
                 <i class="fas fa-long-arrow-alt-right"></i>
             </div>
             <div class="product-image">
-                <img src="{{ next_product($pasta_types, $product_id)["src"] }}" alt="">
+                <img src="{{ next_product($pasta_types, $product_id)["src"] }}" alt="{{ next_product($pasta_types, $product_id)["titolo"] }}">
             </div>
         </div>
 

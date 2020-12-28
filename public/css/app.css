@@ -102,6 +102,7 @@ main h1 {
 }
 
 #pasta-types-container .cards-container .card img {
+  display: block;
   max-width: 100%;
 }
 
@@ -203,8 +204,13 @@ main h1 {
   font-size: 22px;
 }
 
+#footer-top {
+  padding: 100px 0;
+}
+
 #footer-top #footer-contacts {
   width: calc(100% / 3);
+  color: #a9a9a9;
 }
 
 #footer-top #footer-menus {
@@ -215,6 +221,20 @@ main h1 {
 
 #footer-top #footer-menus .footer-menu {
   width: 50%;
+}
+
+#footer-top #footer-menus .footer-menu h3 {
+  margin: 20px 0;
+  color: #9f9f9f;
+  text-transform: uppercase;
+}
+
+#footer-top #footer-menus .footer-menu li {
+  margin: 10px 0;
+}
+
+#footer-top #footer-menus .footer-menu li a {
+  color: #a9a9a9;
 }
 
 #footer-bottom img {

@@ -1,6 +1,9 @@
 #footer-top {
+    padding: 100px 0;
+
     #footer-contacts{
         width: calc(100% / 3);
+        color: #a9a9a9;
     }
 
     #footer-menus {
@@ -10,6 +13,20 @@
 
         .footer-menu {
             width: 50%;
+
+            h3 {
+                margin: 20px 0;
+                color: #9f9f9f;
+                text-transform: uppercase;
+            }
+
+            li {
+                margin: 10px 0;
+
+                a {
+                    color: #a9a9a9;
+                }
+            }
         }
     }
 }
